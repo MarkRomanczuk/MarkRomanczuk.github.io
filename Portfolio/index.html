@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mark</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+    <style>
+       
+
+        .container {
+            color: #fff;
+        }
+
+        .test-text {
+            padding: 3rem;
+            font-size: 4rem;
+            font-weight: 500;
+        }
+
+        
+
+        .tricker {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .tricker-item {
+            white-space: nowrap;
+            animation: tricker 32s linear infinite;
+            animation-delay: -16s;
+        }
+
+        .tricker-item:nth-child(2) {
+            animation: tricker2 32s linear infinite;
+            animation-delay: 0s;
+        }
+
+        @keyframes tricker {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes tricker2 {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-200%);
+            }
+        }
+
+        html,
+        body {
+            padding: 0;
+            background-color: #000;
+            font-family: "Times New Roman", Times, serif;
+
+
+
+            margin: 0;
+        }
+
+        ul#menu li {
+            display: inline;
+            text-decoration: none;
+            /*убираем подчеркивание текста ссылок*/
+            font-size: 3.5em;
+        }
+
+        ul#menu li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 3%;
+        }
+
+        .menu {
+            padding-top: 3rem;
+        }
+
+        .button {
+            background-color: #fff;
+            height: 32rem;
+            width: 55rem;
+            margin-top: 30rem;
+            vertical-align: middle;
+            text-align: center;
+            padding: auto;
+            -webkit-box-shadow: 3px 5px 9px -4px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 3px 5px 9px -4px rgba(0, 0, 0, 1);
+            box-shadow: 3px 5px 9px -4px rgba(0, 0, 0, 1);
+            margin-left: 3rem;
+        }
+
+
+        .one {
+            height: 105rem;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .text h1 {
+            color: #000;
+            font-size: 5em;
+            font-weight: 50;
+            font-family: "Times New Roman", Times, serif;
+
+
+        }
+
+        .text {
+            text-align: center;
+            margin: 0 auto;
+            display: inline-block;
+            padding-top: 9rem;
+
+
+        }
+
+        .two {
+            background-color: #000;
+            height: 105rem;
+
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .two h1 {
+            text-transform: uppercase;
+            color: #fff;
+            padding-top: 2rem;
+            font-size: 3rem;
+            font-weight: 50;
+            font-family: "Times New Roman", Times, serif;
+
+        }
+
+        .left img {
+            height: 27rem;
+            width: 27rem;
+            padding-left: 2rem;
+
+
+
+        }
+
+        .right img {
+            height: 27rem;
+            width: 27rem;
+            padding-right: 2rem;
+        }
+
+        .weed img {
+            width: 56rem;
+            padding-top: 1rem;
+
+        }
+
+        .line {
+            margin: 0;
+            height: 5rem;
+            padding: 1rem;
+        }
+
+        .line2 {
+            margin: 0;
+            height: 5rem;
+            padding: 1rem;
+        }
+
+        .logo {
+            background-color: #000;
+
+
+        }
+
+        .lew {
+            float: left;
+        }
+
+        .praw {
+            float: right;
+        }
+
+        .lew img {
+            width: 23rem;
+            ;
+            height: 23rem;
+            ;
+            padding-top: 2rem;
+            padding-left: 3rem;
+
+
+        }
+
+        .praw img {
+            width: 23rem;
+            height: 23rem;
+            padding-right: 3rem;
+            padding-top: 2rem;
+
+        }
+
+        .alisa img {
+            width: 56rem;
+            height: 30rem;
+            border-radius: 30px;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+
+        .logo img {
+            width: 56.5rem;
+            height: 42rem;
+        }
+
+        .party img {
+            width: 57rem;
+            height: 56rem;
+            border-radius: 30px;
+
+        }
+
+        #one {
+            margin-top: 2rem;
+
+
+        }
+
+        #two {
+            font-family: "Times New Roman", Times, serif;
+            text-transform: uppercase;
+
+        }
+
+        .about {
+            background: url(six.jpg) no-repeat;
+            margin: 0;
+            height: 56rem;
+            width: 100%;
+
+        }
+
+        .name {
+            margin-left: 3rem;
+            margin-top: 1rem;
+            padding-top: 5rem;
+        }
+
+        .name p {
+            font-family: "Times New Roman", Times, serif;
+            color: #fff;
+            line-height: 0.6;
+            font-size: 3.2rem;
+            font-weight: 50;
+        }
+
+        .linetwo {
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: 3rem;
+            font-size: 3rem;
+            font-weight: 50;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .textabout {
+            margin-left: 1rem;
+            padding-top: 33rem;
+        }
+
+        .abouttext p {
+            color: #e9e9e9;
+            font-size: 2.4rem;
+            text-shadow: 2px 2px 3px rgb(56, 56, 56);
+            line-height: 1.2;
+            padding: 1.1rem;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 57rem;
+            margin-top: 31rem;
+        }
+
+        .buttondesign {
+            margin-top: 20rem;
+            position: fixed;
+            margin-left: 35rem;
+            width: 20rem;
+            height: 5rem;
+            background-color: rgb(97, 0, 161);
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 100, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1800, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+
+    <div class="one" align="center" style="background-color: #000;">
+        <div class="menu">
+            <ul id="menu">
+                <li><a href="#1">sites</a></li>
+                <li><a href="#2">logos</a></li>
+                <li><a href="#3">about</a></li>
+            </ul>
+        </div>
+        <div class="button" style="position: fixed">
+            <div class="text">
+                <h1>
+                    Directed by<br>Mark Ramanchuk
+                </h1>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="telotwo" style="position: sticky; background-color: #000;" >
+        <div class="two" align="center" style="position: sticky">
+            <h1 id="1">
+                SITES
+            </h1>
+            <div class="spis" style="overflow: hidden">
+                <div class="left">
+                    <a href="mobil.html"><img src="1.png"></a>
+                </div>
+                <div class="right">
+                    <a href="unnw.html"><img src="2.png"></a>
+                </div>
+            </div>
+            <div class="alisa" data-aos="fade-down">
+                <a href="#"><img src="7.jpg"></a>
+            </div>
+            <div class="weed" data-aos="fade-down">
+                <a href=""><img src="3.jpg"></a>
+
+            </div>
+
+        </div>
+        <div class="line" align="center" id="content">
+            <div class="container" id="2">
+                <div class="tricker">
+                    <span class="tricker-item">
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                    </span>
+                    <span class="tricker-item">
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                        <span class="test-text">LOGO</span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="logo" align="center">
+            <img src="9.jpg" data-aos="fade-right">
+            <div class="uk-slider-container-offset" uk-slider style="width: 57rem;
+        height: 50rem;" id="one">
+
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" id="two"
+                    data-aos="fade-left">
+
+                    <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                        <li>
+                            <div class="uk-card uk-card-default" style="border: 0.3rem #fff;
+                        border-style: solid; height: 47rem;">
+                                <div class="uk-card-media-top">
+                                    <img src="one.jpg" style="height: 26rem;
+                                width: 26rem;">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title" style="text-align: left; color: #000;">Connect</h3>
+                                    <p style="font-size: 2rem; text-align: left; color: #000;">LOGO OF THE COMPANY
+                                        PRODUCING
+                                        CABLES "CONNECT"</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default" style="border: 0.3rem #fff;
+                        border-style: solid;height: 47rem;">
+                                <div class="uk-card-media-top">
+                                    <img src="two.png" style="height: 26rem;
+                                width: 26rem;">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title" style="text-align: left;">Nenovostdnya</h3>
+                                    <p style="font-size: 2rem; text-align: left; color: #000;">THE LOGO OF THE ONLINE
+                                        NEWS
+                                        PUBLICATION "NENOVOSTDNYA"</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default" style="border: 0.3rem #fff;
+                        border-style: solid;height: 47rem;">
+                                <div class="uk-card-media-top">
+                                    <img src="tree.jpg" style="height: 26rem;
+                                width: 26rem;">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title" style="text-align: left;">Intwofoot</h3>
+                                    <p style="font-size: 2rem; text-align: left; color: #000;">The logo of a YouTube
+                                        channel
+                                        dedicated to football</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default" style="border: 0.3rem #fff;
+                        border-style: solid;height: 47rem;">
+                                <div class="uk-card-media-top">
+                                    <img src="four.jpg" style="height: 26rem;
+                                width: 26rem;">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title" style="text-align: left;">Belmarket</h3>
+                                    <p style="font-size: 2rem; text-align: left; color: #000;">The logo of the
+                                        Belarusian
+                                        retail chain "Belmarket"</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="uk-position-center-left uk-position-small " href="#" uk-slidenav-previous
+                        uk-slider-item="previous"
+                        style="background-color: #c1c1c1; border-radius: 4rem; height: 3.6rem; width: 3.6rem; padding-top: 1rem; opacity: 67%; padding-right: 0.8rem;"></a>
+
+                    <a class="uk-position-center-right uk-position-small " href="#" uk-slidenav-next
+                        uk-slider-item="next"
+                        style="background-color: #c1c1c1; border-radius: 4rem; height: 3.6rem; width: 3.6rem; padding-top: 1rem; opacity: 67%; padding-left: 0.8rem;"></a>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="party" data-aos="fade-right">
+                <img src="6.jpg" style="border: 0.3rem #fff;
+                border-style: solid;">
+            </div>
+        </div>
+        <div class="linetwo" align="center" >
+            <p>About</p>
+        </div>
+        <div class="about" id="3" data-aos="fade-right">
+            <div class="name">
+                <p>
+                    Mark Ramanchuk</p>
+                <p style="text-transform: uppercase;">Webdesigner</p>
+
+
+
+            </div>
+            <div class="aboutblackcenterbydlokod" align="center">
+                <div class="aboutblack">
+                    <div class="abouttext" data-aos="fade-down">
+
+                        <p>I am a young designer from Belarus,currently living in Poland. I am engaged in design
+                            development
+                            and website creation. I have photoshop skills and design logos</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
